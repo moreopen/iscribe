@@ -1,0 +1,2 @@
+mvn -U clean deploy
+
