@@ -14,10 +14,10 @@ public class ScribeAppenderTest {
 	public void testScribeAppender() throws Exception {
 		Logger logger = LoggerFactory.getLogger("scribe");
 		long start = System.currentTimeMillis();
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 5; i++) {
 			logger.info("Hello, scribe. 你好，scribe {}", i);
 		}
 		System.out.println("Time cost:" + (System.currentTimeMillis() - start));
-		while(true);
+//		while(true);
 	}
 }

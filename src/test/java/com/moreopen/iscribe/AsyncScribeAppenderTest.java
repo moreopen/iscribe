@@ -15,12 +15,12 @@ public class AsyncScribeAppenderTest {
 		Logger logger = LoggerFactory.getLogger("asyncScribe");
 		Thread.sleep(2000);
 			long start = System.currentTimeMillis();
-			for (int i = 0; i < 50; i++) {
+			for (int i = 0; i < 5; i++) {
 				logger.info("Hello, async scribe. 你好，async scribe {}", i);
 				Thread.sleep(1000);
 			}
 			System.out.println("Time cost:" + (System.currentTimeMillis() - start));
-		while (true)
+//		while (true)
 			;
 	}
 }
