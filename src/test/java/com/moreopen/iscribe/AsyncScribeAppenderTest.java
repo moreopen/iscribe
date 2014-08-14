@@ -12,7 +12,7 @@ public class AsyncScribeAppenderTest {
 
 	@Test
 	public void testScribeAppender() throws Exception {
-		Logger logger = LoggerFactory.getLogger("asyncScribe");
+		Logger logger = LoggerFactory.getLogger("scribe.test");
 		Thread.sleep(2000);
 			long start = System.currentTimeMillis();
 			for (int i = 0; i < 5; i++) {
